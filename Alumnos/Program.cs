@@ -38,8 +38,7 @@ namespace Alumnos
                 alumnos[i].Id += i;
             }
 
-            do
-            {
+            do {
                 aux.ListarAlumnos(alumnos);
 
                 Console.WriteLine("escriba numero del alumno que le quiere cambiar el promedio");
@@ -47,10 +46,8 @@ namespace Alumnos
 
                 id = aux.BuscarId(id, alumnos);
 
-                if (id != -1)
-                {
-                    do
-                    {
+                if (id != -1) {
+                    do {
                         Console.WriteLine("Ingrese promedio alumno: ");
                         alumnos[id].Promedio = double.Parse(Console.ReadLine());
                     } while (alumnos[id].Promedio < 1 || alumnos[id].Promedio > 10);
